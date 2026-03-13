@@ -1,0 +1,9 @@
+Algorytmy i struktury danych są bardzo ważne w programowaniu. 
+Algorytmy pomagają rozwiązywać problemy.
+
+Programowanie wymaga zrozumienia algorytmów. 
+Java umożliwia implementację wielu algorytmów.
+
+Algorytmy algorytmy algorytmy.
+Programowanie programowanie.
+Java Java.

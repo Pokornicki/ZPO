@@ -1,0 +1,8 @@
+Programowanie jest ciekawą dziedziną. 
+Programowanie wymaga logicznego myślenia i cierpliwości.
+
+Java jest jednym z najpopularniejszych języków programowania. 
+W Java można pisać aplikacje webowe i aplikacje desktopowe.
+
+Programowanie w Java rozwija umiejętności programisty.
+Programista programuje programy.
