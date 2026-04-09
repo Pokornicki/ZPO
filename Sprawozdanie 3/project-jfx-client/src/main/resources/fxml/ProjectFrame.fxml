@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.project.controller.ProjectController">
+
+    <top>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <HBox spacing="10">
+                <TextField fx:id="txtSzukaj" promptText="Szukaj..." prefWidth="250"/>
+                <Button text="Szukaj" onAction="#onActionBtnSzukaj"/>
+                <Label text="Rozmiar strony:"/>
+                <ChoiceBox fx:id="cbPageSizes" prefWidth="90"/>
+                <Button text="Dodaj" onAction="#onActionBtnDodaj"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Button fx:id="btnPierwsza" text="|&#x25C4;" onAction="#onActionBtnPierwsza"/>
+                <Button fx:id="btnWstecz" text="&#x25C4;" onAction="#onActionBtnWstecz"/>
+                <Button fx:id="btnDalej" text="&#x25BA;" onAction="#onActionBtnDalej"/>
+                <Button fx:id="btnOstatnia" text="&#x25BA;|" onAction="#onActionBtnOstatnia"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tblProjekt" prefHeight="500.0" prefWidth="900.0">
+            <columns>
+                <TableColumn fx:id="colId" text="Id" prefWidth="80.0"/>
+                <TableColumn fx:id="colNazwa" text="Nazwa" prefWidth="180.0"/>
+                <TableColumn fx:id="colOpis" text="Opis" prefWidth="260.0"/>
+                <TableColumn fx:id="colDataCzasUtworzenia" text="Data utworzenia" prefWidth="180.0"/>
+                <TableColumn fx:id="colDataOddania" text="Data oddania" prefWidth="150.0"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>
